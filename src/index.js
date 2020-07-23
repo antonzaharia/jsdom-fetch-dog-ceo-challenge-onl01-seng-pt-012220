@@ -39,7 +39,8 @@ function createBreeds(breeds) {
     })
   });
 };
-document.getElementById('breed-dropdown').addEventListener('change', function(e){
+const dropdown = document.getElementById('breed-dropdown');
+dropdown.addEventListener('change', function(e){
   const letter = e.target.value
   console.log(letter)
   // const filteredBreeds = allBreeds.filter((breed => breed.startsWith(letter)))
