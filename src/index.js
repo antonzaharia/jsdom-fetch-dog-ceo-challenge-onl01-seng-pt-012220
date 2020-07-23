@@ -1,5 +1,4 @@
 console.log('%c HI', 'color: firebrick')
-let allBreeds = [];
 function addImage(src){
   let img = document.createElement("img");
   img.src = src;
