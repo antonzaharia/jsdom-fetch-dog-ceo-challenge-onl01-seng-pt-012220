@@ -43,8 +43,7 @@ function createBreeds(breeds) {
 const dropdown = document.getElementById("breed-dropdown");
 dropdown.addEventListener('change', function(e){
   const letter = e.target.value;
-  console.log(letter);
-  // const filteredBreeds = allBreeds.filter((breed => breed.startsWith(letter)))
+  const filteredBreeds = allBreeds.filter((breed => breed.startsWith(letter)))
   // const container = document.getElementById('dog-breeds')
   // container.innerHTML = createBreeds(filteredBreeds);
 });
