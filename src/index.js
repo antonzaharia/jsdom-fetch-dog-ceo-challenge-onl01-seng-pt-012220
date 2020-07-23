@@ -41,5 +41,7 @@ function createBreeds(breeds) {
 };
 document.getElementById('breed-dropdown').addEventListener('change', function(e){
   const letter = e.target.value
-
+  const filteredBreeds = allBreeds.filter((breed => breed.startsWith(letter)))
+  const container = document.getElementById('dog-breeds')
+  container.innerHTML = createBreeds(filteredBreeds);
 });
