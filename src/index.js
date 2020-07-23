@@ -59,7 +59,7 @@ dropdown.addEventListener('change', function(e){
   const filteredBreeds = allBreeds.filter((breed => breed.startsWith(letter)));
   let allLi = document.getElementsByTagName('li');
   for(let i = 0; i < allLi.length; i++){
-    allLi[0].remove;
+    allLi[0].remove();
   }
   createBreedsFromArray(filteredBreeds);
 });
