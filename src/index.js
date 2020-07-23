@@ -1,5 +1,6 @@
 console.log('%c HI', 'color: firebrick')
 let allBreeds = [];
+const container = document.getElementById('dog-breeds');
 function addImage(src){
   let img = document.createElement("img");
   img.src = src;
