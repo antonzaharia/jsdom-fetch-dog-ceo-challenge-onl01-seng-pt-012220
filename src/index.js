@@ -47,5 +47,5 @@ dropdown.addEventListener('change', function(e){
   const filteredBreeds = allBreeds.filter((breed => breed.startsWith(letter)))
   console.log(filteredBreeds)
   const container = document.getElementById('dog-breeds')
-  // container.innerHTML = createBreeds(filteredBreeds);
+  container.innerHTML = createBreeds(filteredBreeds);
 });
