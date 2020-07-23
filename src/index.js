@@ -41,6 +41,18 @@ function createBreeds(breeds) {
   });
 };
 
+function createBreedsFromArray(array) {
+  for(let i = 0; i < array.length; i++){
+    const li = document.createElement('li');
+    const container = document.getElementById('dog-breeds');
+    li.textContent = array[i];
+    container.appendChild(li);
+    li.addEventListener('click', function(e){
+      li.style.color = 'red';
+    })
+  }
+}
+
 const dropdown = document.getElementById("breed-dropdown");
 dropdown.addEventListener('change', function(e){
   const letter = e.target.value;
