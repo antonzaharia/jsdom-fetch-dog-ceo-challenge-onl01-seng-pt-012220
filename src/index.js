@@ -28,7 +28,7 @@ fetch(breedUrl)
   createBreeds(json);
 });
 function createBreeds(breeds) {
-  Object.keys(breeds.message).forEach(function(key){
+  let allBreeds = Object.keys(breeds.message).forEach(function(key){
     const li = document.createElement('li');
     const container = document.getElementById('dog-breeds')
     li.textContent = key;
@@ -38,3 +38,7 @@ function createBreeds(breeds) {
     })
   });
 };
+document.getElementById('breed-dropdown').addEventListener('change', function(e){
+  const letter = e.target.value
+  const filteredBreeds =
+});
