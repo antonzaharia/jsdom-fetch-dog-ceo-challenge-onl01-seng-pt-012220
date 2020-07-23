@@ -1,5 +1,6 @@
 console.log('%c HI', 'color: firebrick')
 let allBreeds = [];
+const dropdown = document.getElementById('breed-dropdown');
 function addImage(src){
   let img = document.createElement("img");
   img.src = src;
@@ -39,7 +40,7 @@ function createBreeds(breeds) {
     })
   });
 };
-const dropdown = document.getElementById('breed-dropdown');
+
 dropdown.addEventListener('change', function(e){
   const letter = e.target.value
   console.log(letter)
