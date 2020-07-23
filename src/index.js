@@ -48,6 +48,7 @@ function createBreeds(breeds) {
     li.textContent = key;
     allBreeds.push(key);
     container.appendChild(li);
+    //Third
     li.addEventListener('click', function(e){
       li.style.color = 'red';
     })
