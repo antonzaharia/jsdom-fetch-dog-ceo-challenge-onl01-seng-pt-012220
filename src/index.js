@@ -49,9 +49,9 @@ function createBreedsFromArray(array) {
     container.appendChild(li);
     li.addEventListener('click', function(e){
       li.style.color = 'red';
-    })
-  }
-}
+    });
+  };
+};
 
 const dropdown = document.getElementById("breed-dropdown");
 dropdown.addEventListener('change', function(e){
