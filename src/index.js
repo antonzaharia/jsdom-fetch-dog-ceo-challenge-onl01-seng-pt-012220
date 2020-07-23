@@ -33,6 +33,7 @@ function createBreeds(breeds) {
     const li = document.createElement('li');
     const container = document.getElementById('dog-breeds')
     li.textContent = key;
+    allBreeds.push(key);
     container.appendChild(li);
     li.addEventListener('click', function(e){
       li.style.color = 'red';
