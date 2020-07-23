@@ -57,7 +57,7 @@ const dropdown = document.getElementById("breed-dropdown");
 dropdown.addEventListener('change', function(e){
   const letter = e.target.value;
   const filteredBreeds = allBreeds.filter((breed => breed.startsWith(letter)));
-  let allLi = document.getElementsByTagName('li');
+  let allLi = document.querySelectorAll('li');
   for(let i = 0; i < allLi.length; i++){
     allLi[i].remove();
   }
