@@ -1,6 +1,6 @@
 console.log('%c HI', 'color: firebrick')
 let allBreeds = [];
-const dropdown = document.querySelect('select');
+const dropdown = document.querySelector('select');
 console.log(dropdown);
 function addImage(src){
   let img = document.createElement("img");
