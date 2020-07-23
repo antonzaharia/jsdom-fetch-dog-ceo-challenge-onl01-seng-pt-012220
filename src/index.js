@@ -41,5 +41,5 @@ function createBreeds(breeds) {
 };
 document.getElementById('breed-dropdown').addEventListener('change', function(e){
   const letter = e.target.value
-  
+
 });
