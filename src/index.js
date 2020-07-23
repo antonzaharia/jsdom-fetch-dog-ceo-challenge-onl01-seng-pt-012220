@@ -60,5 +60,5 @@ dropdown.addEventListener('change', function(e){
   for(let i = 0; i < allLi.length; i++){
     allLi[i].remove();
   }
-  console.log(createBreedsFromArray(filteredBreeds));
+  createBreedsFromArray(filteredBreeds);
 });
