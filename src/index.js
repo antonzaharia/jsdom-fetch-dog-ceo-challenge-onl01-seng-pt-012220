@@ -1,4 +1,5 @@
 console.log('%c HI', 'color: firebrick')
+let allBreeds = [];
 function addImage(src){
   let img = document.createElement("img");
   img.src = src;
@@ -28,7 +29,7 @@ fetch(breedUrl)
   createBreeds(json);
 });
 function createBreeds(breeds) {
-  let allBreeds = Object.keys(breeds.message).forEach(function(key){
+  allBreeds = Object.keys(breeds.message).forEach(function(key){
     const li = document.createElement('li');
     const container = document.getElementById('dog-breeds')
     li.textContent = key;
