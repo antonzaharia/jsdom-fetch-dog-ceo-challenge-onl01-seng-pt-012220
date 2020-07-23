@@ -1,4 +1,5 @@
 console.log('%c HI', 'color: firebrick')
+// Variables
 let allBreeds = [];
 const container = document.getElementById('dog-breeds');
 //Functions
